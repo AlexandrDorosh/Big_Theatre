@@ -1,0 +1,340 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+@font-face{
+    font-family: 'Open_Sans_700';
+    src: url('./fonts/opensanscondensedbold.ttf');
+}
+
+@font-face{
+  font-family: 'Open_Sans_400';
+  src: url('./fonts/OpenSans-Regular.ttf');
+}
+
+.container{
+    width: 1110px;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+}
+
+.header ul{
+    display: flex;
+    flex-direction: row;
+    font-family: 'Open_Sans_700';
+    font-size: 18px;
+}
+
+.header li{
+    margin: 51px 0;
+    margin-right: 63px;
+}
+
+.header a:hover{
+    color: #D1A954;
+}
+
+.header a{
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.header_phone{
+    font-family: 'Open_Sans_700';
+    font-size: 16px;
+    margin: 51px 0;
+    border-bottom: 2px #D1A954 solid;
+    height: 20px;
+    color: white;
+    cursor: pointer;
+}
+
+.header_phone:hover{
+  color: #D1A954;
+}
+
+.theatre{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: url(./img/Rectangle.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 1045px;
+    width: 100%;
+    z-index: -1;
+}
+
+.poster_container{
+  /* margin-top: 267px; */
+  color: white;
+  display: flex;
+}
+
+.theatre_text{
+  margin-top: 384px;
+  width: 540px;
+}
+
+.theatre_text h1{
+  font-size: 64px;
+  font-family: 'Open_Sans_700';
+  letter-spacing: 0.1em;
+}
+
+.theatre_text p{
+  font-size: 14px;
+  font-family: 'Open_Sans_400';
+  font-weight: normal;
+  line-height: 150%;
+  margin: 50px 0;
+}
+
+.theatre_text button{
+  font-size: 18px;
+  font-family: 'Open_Sans_700';
+  background-color: #D1A954;
+  padding: 13px 47px;
+  color: white;
+  border: none;
+}
+
+.theatre_img{
+  margin-left: 125px;
+  margin-top: 267px;
+  width: 370px;
+  position: relative;
+}
+
+.item{
+  width: 370px;
+  height: 510px;
+}
+
+.owl-carousel .owl-item img {
+  display: block;
+  width: 94%;
+}
+
+.owl-nav{
+  display: none;
+}
+
+.owl-dots{
+  display: none;
+}
+
+.poster_1{
+  position: relative;
+  z-index: 1;
+}
+
+.poster_2{
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
+
+.poster_buttons{
+  display: flex;
+  justify-content: space-between;
+  font-family: "Open_Sans_700";
+  margin-top: 35px;
+}
+
+.poster_button_left{
+  display: flex;
+  cursor: pointer;
+}
+
+.poster_button_left p{
+  margin-left: 25px;
+  font-size: 18px;
+  letter-spacing: 0.1em;
+}
+
+.poster_button_right{
+  display: flex;
+  cursor: pointer;
+}
+
+.poster_button_right p{
+  margin-right: 25px;
+  font-size: 18px;
+  letter-spacing: 0.1em;
+}
+
+.contact_info{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 150px;
+    height: 100%;
+    background: rgba(51, 51, 51, 0.75);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.contact_info h3{
+    font-size: 18px;
+    line-height: 25px;
+    letter-spacing: 2px;
+    font-family: 'Open_Sans_700';
+    color: #C4C4C4;
+    writing-mode: vertical-lr;
+    transform: rotate(180deg);
+    margin-bottom: 40px;
+}
+
+.contact_info span{
+    width: 3px;
+    height: 80px;
+    background-color: #C4C4C4;
+    margin-bottom: 40px;
+}
+
+.social_networks{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.network{
+    color: rgba(255, 255, 255, 0.6);
+    margin-bottom: 30px;
+}
+
+.network:hover{
+    color: #D1A954;
+}
