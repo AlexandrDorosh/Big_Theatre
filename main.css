@@ -684,12 +684,12 @@ span{
   color: white;
 }
 
-.container_maecenas h1{
+.container_maecenas h1 {
   font-size: 48px;
   font-family: 'Open_Sans_con_300';
   letter-spacing: 0.1em;
   text-align: center;
-  margin-top: 40px;
+  margin-top: -75px;
   margin-bottom: 100px;
 }
 
